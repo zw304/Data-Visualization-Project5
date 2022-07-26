@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Zehui's portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Header --> 
+<br><br><br>
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="global-energy.jpg" alt="Architecture" width="1450" height="200">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Global Electronic Comsumption Visualizations</b></span>  <span class="w3-hide-small w3-text-light-grey"> </span></h1>
+  </div>
+</header>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+ <div class="w3-container w3-padding-64" id="introuction">
+    
+    <div class="w3-container">
+      <h2 class="w3-medium"><span class="w3-tag w3-light-grey"> Data Source: </span>  The original dataset is coming from a time series set of electric power consumption measurements in one household taken every minute for nearly 4 years named as ‘household_power_consumption.txt’ with 2 million observations.  <a href="https://georgetown.box.com/s/mttot9cdo2xvaqb5pf36gxx3ajbmeaf3" class="w3-bar-item w3-button"> <span class="w3-tag w3-light-grey"> here (click to see link) </span> </a>. Note: the dataset can be accessed with GU credentials. The data is revised and munged in Python with file named as ‘shader.py’ in this repository. </h2>
+    </div>
+  </div> 
+  
+  
+  <h2 class="w3-center">Story Telling</h2><br>
+  <p class="w3-medium"><span class="w3-tag w3-light-grey"> Storyline: </span>  One household is curious about its daily electric consumption and global active power amount from 2006 to 2010, the household therefore want data scientist to do visualizations for the family to discover their electricity usage.  </p>
+
+  
+  <br><br><br>
+   <h2>Scatter Plot Using “hvplot” & “datashader” Packages in Python: </h2>
+  <div class="w3-center">
+  <img class="w3-image" src="dshade.png" alt="Architecture" width="1450" height="200">
+   </div>
+   
+  <p class="w3-medium"><span class="w3-tag w3-light-grey"> Write Up: </span>  Using python as the programming language to do the visualization in “hvplot” and “datashader” packages, this scatter plot reflect the global active power in 4 years from 2006 to 2010. The plot shows that in around March and April of each year, the power usage is the lowest. It also shows a very obvious gap between around August and October in 2008 which might be the biggest gap usage among these 4 years. The scatter plot shows that the most power usage of this household is under 4 Watts per minute with the whole range from 0 W to 10 W. Take a look into the color of each scatter, we can see that there is a blue gradual change in power. The lighter the color, the lower the usage frequency is. Therefore, the dark blue represents the high frequency of power consumption of this household. The plot shows two most frequent amounts of power usage in dark blue: the most frequent power usage is around 0.2 W and the 2nd is around 0.6 to 0.8W which are very common. To compare usage in different years, the year of 2010 seems have the least gap space in active power while the 2008 owns the biggest gap usage which might because this household were not at home during that period.   </p>
+  
+  <br><br><br>
+  <h2>Line Plot Using "d3.js" in R: </h2>
+ 
+  <div class="w3-center">
+   <img class="w3-image" src="assignment-2.png" alt="Architecture" width="1450" height="200"> 
+   </div>
+ <p class="w3-medium"><span class="w3-tag w3-light-grey"> Write Up: </span>  Using R and d3.js to produce this line plot, it gives this household a very clear trend of the daily total electric consumption with major fluctuations. Because the goal of this line graph is to visualize the daily power usage, so the revised dataset was taken the sum of the “Global_active_power” variable which is the power usage per minute and then grouped by the “Date”.  The range of the Daily total usage is for this household is from 0W to 5000W. Ranging from November 2006 to November 2010, the line plot shows that the most dramatic ups and downs of power usage is around Nov. 2006 and Jan. 2007. The line plot also shows a seasonal pattern of a decrease trend of electric consumption from January to July and then an upward trend of usage from September to around February. This seasonal pattern makes sense in real life since in autumn and winter, people usually need more heats which lead to a higher cost of daily power consumption. The daily consumption is the highest at February and then decrease which might due to the rise of temperature in spring. The lowest daily consumption is in around August and then start increase which might due to the higher frequency of cooling(air-conditioner/fan) and heating usage in summer and winter. This line plot provides the household a very good overview of the daily power consumption and then get to know and save more electricity with a better and deep understanding.  </p>
+ 
+    <div class="w3-container">
+
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Welcome to Zehui Wu's portfolio.</p>
+  <p>Check the top links to see more about Zehui's Data Science projects.</p>
+</footer>
+
+</body>
+</html>
